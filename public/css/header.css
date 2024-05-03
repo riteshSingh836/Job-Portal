@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(125deg,rgb(40, 16, 91),rgb(97, 97, 215), rgb(75, 34, 162), rgb(86, 111, 209));
+}
+.headers {
+    border-radius: 8px;
+    background: linear-gradient(35deg,lightblue, rgb(86, 111, 209),rgb(40, 16, 91),rgb(97, 97, 215));
+
+}
+.formDesign {
+    border-radius: 5px;
+    background: linear-gradient(125deg,lightblue, rgb(40, 16, 91),rgb(97, 97, 215));
+}
+
+

@@ -1,0 +1,20 @@
+/* Navigation */
+
+.nav-styles {
+    background: linear-gradient(125deg,rgb(97, 97, 215),rgb(97, 97, 215), rgb(40, 16, 91), rgb(86, 111, 209));
+}
+
+/* job seeker & recruiter button */
+
+.actions {
+    margin-top: 100px;
+}
+.lbtn {
+    box-shadow: 2px 4px 6px #0b2342;
+    transition: all ease-in-out 0.5s;
+}
+.lbtn:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 12px 0.1px black;
+}
+

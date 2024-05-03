@@ -1,0 +1,23 @@
+<!-- Registration.ejs -->
+
+<h1 class="mt-5 mb-4 headers">Apply for this JOB</h1>
+
+<form action="/apply" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input class="form-control" id="email" name="email" rows="3" required>
+    </div>
+    <div class="mb-3">
+        <label for="number" class="form-label">Contact No.</label>
+        <input type="number" class="form-control" id="number" name="number" required>
+    </div>
+    <div class="mb-3">
+        <label for="pdf" class="form-label">Choose File: </label>
+        <input type="file" class="form-control" id="pdf" name="pdf" accept="pdf/*">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

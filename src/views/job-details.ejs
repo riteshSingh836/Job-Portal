@@ -1,0 +1,47 @@
+<div class="container my-2 mt-5">
+    <div class="card mb-3">
+  
+      <div class="card-body">
+        <h1 class="text-center text-success">
+          <span class="text-danger"> "<%= job.designation %>" </span> opportunity
+          in <%= job.location %> at
+          <span class="text-info"> <%= job.name %> </span>
+        </h1>
+        
+        <div class="container d-flex flex-column align-items-centre justify-content-start my-3">
+          <h5 class="my-1 mx-2"><%= job.name %></h5>
+
+          <div>
+            <span class="mx-2"><%= job.category %></span>
+            <span class="text-success"><%= job.designation %></span>
+          </div>
+
+          <div class="d-flex flex-column align-items-centre justify-content-start my-3 mx-2">
+            <span class=""><%= job.location %></span>
+            <span class=""><%= job.salary %></span>
+            <span>Apply By : <%= job.deadline %></span>
+            <span>Number of openings : <%= job.openings %></span>
+            <a style="text-decoration: none; color: rgb(215, 20, 85)" href="applicants/1">
+                Applicants : <%= job.applicants %></span>
+            </a>
+          </div>
+
+          <div class="container">
+            <div class="skills p-1">
+                <button class="btn btn-sm btn-outline-info">REACT</button>
+            </div>
+            <a href="/apply" class="btn btn-lg lbtn m-2"> Apply Now </a>
+
+            <!-- <button class="btn btn-md btn-primary px-5 my-2">Apply Now</button> -->
+            <div>
+              <% if (locals.lastVisit) { %>
+              <button class="btn btn-md btn-warning px-5 my-2">Posted on: <%= locals.lastVisit %></button>
+                <% } %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+</div>

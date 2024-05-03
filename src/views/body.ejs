@@ -1,0 +1,20 @@
+<div class="container-lpage">
+    <div class="container main">
+      <div class="left p-2">
+        <h1 class="main-heading mt-5 pt-5">A comprehensive platform for reliable</h1>
+        <h3 class="text-info mt-5">Job Opportunities and Internships</h3>
+        <h5 class="text-info mt-5">Get Discovered. Get Hired.</h5>
+        <div class="actions">
+
+          <% if (locals.userEmail) { %>
+            <a href="/jobs" class="btn btn-lg lbtn m-2"> I'm A Job Seeker </a>
+          <% }else{ %>
+            <a href="/jobs" class="btn btn-lg lbtn m-2"> I'm A Job Seeker </a>
+            <a href="/register" class="btn btn-lg lbtn m-2"> I'm A Recruiter </a>
+          <% } %>
+        </div>
+      </div>
+    </div>
+</div>
+
+  
